@@ -16,15 +16,20 @@
             margin-bottom: 2rem;
         }
         #logo {
-            background-color: aqua;
             width: 60%;
             float: left;
-            
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 5vw;
+            color: grey;
         }
         #banner {
-            background-color: bisque;
-            float: right;
-            width: 30%;
+            float: left;
+            width: 40%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+            font-size: 2vw;
+            padding-left: 2rem;
+            padding-top: 1rem;
         }
         header:after {
             content: "";
@@ -40,8 +45,7 @@
         }
         img {
             border: 1px solid grey;
-            padding: 1px 2px 1px 1px;
-            width: 10rem;
+            padding: 1px;
         }
         .card-text {
             padding: 0.5rem;
@@ -50,11 +54,35 @@
             .card {
                 width: 50%;
             }
+            img {
+                width: 50%;
+                height: auto;
+            }
         }
         @media screen and (min-width: 600px) {
             .card {
                 width: 20%;
+                
             }
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
+        .text1 {
+            text-transform: uppercase;
+            color: grey;
+            margin: 0.05rem;
+        }
+        .text2 {
+            text-transform: capitalize;
+            font-weight: bold;
+            margin: 0.5rem;
+            color: rgb(70, 67, 67);
+        }
+        .text3 {
+            margin-top: 0rem;
+            color: grey;
         }
 
     </style>
@@ -63,8 +91,11 @@
     <header>
         <h1></h1>
         <div class="virsus">
-            <div id="logo"> we do everything with our core values of honesty, hard work, and trust.</div>
-            <div id="banner">believe these characteristics should influence everything we do in business and in life. We sincerely enjoy the work we do, and our clients get to reap the benefits.</div>
+            <div 
+            id="logo"> We do everything with our core values of <span style=" color: rgb(70, 67, 67); font-weight: bold;"> honesty,</span> hard <span style=" color: rgb(70, 67, 67); font-weight: bold;"> work,</span> and <span style=" color: rgb(70, 67, 67); font-weight: bold;">trust.</span>
+            </div>
+            <div 
+            id="banner"> <span style=" color: rgb(70, 67, 67); font-weight: bold;"> We believe these characteristics </span> should influence everything we do in business and in life. We sincerely enjoy the work we do, and our clients get to reap the benefits.</div>
         </div>
         <h1> </h1>
     </header>
@@ -74,7 +105,7 @@
                 <img src="./images/1face.PNG" alt="face">
             </div>
             <div class="card-text">
-                <h4 class="text1"> eric downs </h4>
+                <p class="text1"> eric downs </p>
                 <p class="text2">Creative director</p>
                 <p class="text3">eric@grainandmortar.com</p>
             </div>    
@@ -84,7 +115,7 @@
                 <img src="./images/2face.PNG" alt="face">
             </div>
             <div class="card-text">
-                <h4 class="text1"> mike dekay </h4>
+                <p class="text1"> mike dekay </p>
                 <p class="text2">Creative director</p>
                 <p class="text3">eric@grainandmortar.com</p>
             </div>    
@@ -94,7 +125,7 @@
                 <img src="./images/3face.PNG" alt="face">
             </div>
             <div class="card-text">
-                <h4 class="text1"> kristen dekay </h4>
+                <p class="text1"> kristen dekay </p>
                 <p class="text2">Creative director</p>
                 <p class="text3">eric@grainandmortar.com</p>
             </div>    
@@ -104,7 +135,7 @@
                 <img src="./images/4face.PNG" alt="face">
             </div>
             <div class="card-text">
-                <h4 class="text1"> miranda bouck </h4>
+                <p class="text1"> miranda bouck </p>
                 <p class="text2">Creative director</p>
                 <p class="text3">eric@grainandmortar.com</p>
             </div>    
@@ -114,15 +145,13 @@
                 <img src="./images/5face.PNG" alt="face">
             </div>
             <div class="card-text">
-                <h4 class="text1"> jesse harding </h4>
+                <p class="text1"> jesse harding </p>
                 <p class="text2">Creative director</p>
                 <p class="text3">eric@grainandmortar.com</p>
             </div>    
         </div>
-        
     </main>
     <footer>
-
     </footer> 
 </body>
 </html>
